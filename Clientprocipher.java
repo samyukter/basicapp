@@ -3,9 +3,9 @@ import java.io.*;
 import java.util.*;
 class Clientprocipher{
 public static void main(String args[]) throws Exception{
-	Socket s=new Socket(InetAddress.getLocalHost(),1234);
-    Scanner sc=new Scanner(System.in);
-    DataInputStream in=new DataInputStream(System.in);
+	Socket s=new Socket(InetAddress.getLocalHost(),1234);//creation
+    Scanner sc=new Scanner(System.in);//input
+    DataInputStream in=new DataInputStream(System.in);//creation
     OutputStream out=s.getOutputStream();
     int key=5;
     while(true){
